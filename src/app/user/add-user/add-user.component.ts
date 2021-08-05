@@ -19,7 +19,7 @@ export class AddUserComponent implements OnInit {
     this.addUserForm= this.formBuilder.group({
       'username':new FormControl('',[Validators.required,Validators.minLength(3)]),
       'email':new FormControl('',[Validators.required,Validators.email] ),
-      'phone':new FormControl('')
+      'phone':new FormControl('',[Validators.required])
     })
   
   }
